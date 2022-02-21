@@ -16,18 +16,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .card {
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   background-color: white;
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   overflow: hidden;
+  margin: 10px;
 }
 
 .header {
@@ -52,8 +53,8 @@
 }
 
 #profile-image {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   border: white 2px solid;
   transition: all 1s ease;
@@ -62,7 +63,7 @@
 .frame {
   position: absolute;
   /* top: -40px; */
-  margin-bottom: 100px;
+  margin-bottom: 180px;
 }
 
 #profile-image:hover {
@@ -70,7 +71,7 @@
 }
 
 #age {
-  font-size: 20px;
+  font-size: 2rem;;
 }
 
 .footer {
@@ -94,5 +95,15 @@
 
 .lightText {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px){
+  .App, #age {
+    font-size: 1.5rem;
+  }
+
+  .lightText {
+    font-size: 1rem;
+  }
 }
